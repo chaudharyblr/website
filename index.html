@@ -1252,6 +1252,7 @@
           <div class="col-lg-7">
             <form action="https://api.staticforms.xyz/submit" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
+              <input type="hidden" name="apiKey" value="sf_dd02f206bd79c5mhhhfdgh1e">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
@@ -1265,7 +1266,7 @@
 
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="" />
+                  <input type="text" class="form-control" name="$subject" id="subject-field" required="" />
                 </div>
 
                 <div class="col-md-12">
@@ -1274,13 +1275,12 @@
                 </div>
 
                 <input type="text" name="honeypot" style="display:none">
-                <input type="hidden" name="apiKey" value="sf_dd02f206bd79c5mhhhfdgh1e">
-                <input type="hidden" name="subject" value="Contact enquiry Details: " />
+                
                 <input type="hidden" name="replyTo" value="@">
+                <div class="g-recaptcha" data-sitekey="6LcPTKIrAAAAAP5zBH1i5SbmrmTxTmgSKXoIg8nh"></div>
                 <input type="hidden" name="redirectTo" value="https://singhbhagwan.com/#contact">
-                <div class="g-recaptcha" data-sitekey="6LdOOqIrAAAAAEA8qOjNLAkJcCwD00GQU9JpAWt6"></div>
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <div class="col-md-12 text-center"><input class="contact_send_btn" type="submit" value="Send Message" /></div>
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
               </div>
           </form>
         </div>
